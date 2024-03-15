@@ -1,0 +1,132 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 50px 20px 80px 90px;
+  font-family: "Inter", sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.logo {
+  width: 100%;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 23px;
+  margin-right: 130px;
+  cursor: pointer;
+}
+
+a:hover {
+  color: hsl(5, 85%, 63%);
+}
+
+li a {
+  text-decoration: none;
+}
+
+main {
+  width: 90%;
+}
+.main-section {
+  display: flex;
+  gap: 3rem;
+}
+
+.h1_div {
+  display: flex;
+  margin-top: 40px;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+.sec-aside {
+  background-color: hsl(240, 100%, 5%);
+  color: hsl(36, 100%, 99%);
+  padding: 2rem;
+}
+
+h2 {
+  margin-bottom: 15px;
+  color: hsl(35, 77%, 62%);
+  font-size: 40px;
+}
+
+.btn-p {
+  line-height: 1.7;
+  margin-bottom: 59px;
+}
+
+button {
+  padding: 12px 37px;
+  background-color: hsl(5, 85%, 63%);
+  border: none;
+  letter-spacing: 3px;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: black;
+}
+
+h3 {
+  margin-bottom: 13px;
+  cursor: pointer;
+}
+
+p {
+  font-size: 15px;
+  line-height: 1.4;
+  color: hsl(233, 8%, 79%);
+}
+
+.aside-p {
+  margin-bottom: 16px;
+  line-height: 1.2;
+  color: hsl(233, 8%, 79%);
+}
+
+hr {
+  margin-bottom: 18px;
+}
+
+.last-div {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+}
+
+.last-img-div {
+  display: flex;
+  gap: 19px;
+  justify-content: space-evenly;
+}
+
+h4 {
+  font-size: 40px;
+  color: hsl(233, 8%, 79%);
+}
+
+h5 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 12px;
+  cursor: pointer;
+}
+
+h5:hover {
+    color: hsl(5, 85%, 63%);
+}

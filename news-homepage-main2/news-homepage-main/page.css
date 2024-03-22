@@ -134,7 +134,7 @@ aside {
   gap: 1.5rem;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 900px) {
   nav ul {
     display: none;
   }

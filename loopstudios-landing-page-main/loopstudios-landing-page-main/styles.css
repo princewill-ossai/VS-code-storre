@@ -1,0 +1,313 @@
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Black: hsl(0, 0%, 0%);
+  --Dark-Gray: hsl(0, 0%, 55%);
+  --Very-Dark-Gray: hsl(0, 0%, 41%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Josefin sans", sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 5rem;
+  padding-left: 10rem;
+  position: relative;
+  z-index: 989;
+}
+
+.icon-hamburger {
+  display: none;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 4rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--White);
+}
+
+main {
+  width: 100%;
+  overflow: hidden;
+}
+
+.div-h1 {
+  background-image: url(./images/desktop/image-hero.jpg);
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 100%;
+  height: 70rem;
+  top: 0rem;
+}
+
+h1 {
+  margin: 20rem 10rem;
+  margin-right: 60rem;
+  padding: 2rem;
+  text-transform: uppercase;
+  color: var(--White);
+  border: 3px solid white;
+  font-size: 6rem;
+}
+
+.Interactive-div {
+  margin-top: 50rem;
+  padding: 15rem;
+  display: flex;
+}
+
+.Interactive-info {
+  position: absolute;
+  margin: 20rem 0rem 30rem 60rem;
+  background-color: var(--White);
+  height: 30rem;
+  padding: 8rem 9rem;
+}
+
+h2 {
+  font-size: 4rem;
+  padding-bottom: 2rem;
+  line-height: 0.8;
+  text-transform: uppercase;
+  line-height: 1.2;
+  font-weight: 100;
+}
+
+h2 + p {
+  line-height: 1.4;
+  color: var(--Dark-Gray);
+}
+
+.Grid-img-info {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 13rem;
+  padding-bottom: 4rem;
+}
+
+h3 {
+  font-size: 5rem;
+  font-weight: 300;
+}
+
+button {
+  padding: 0rem 4rem;
+  background-color: var(--White);
+  color: var(--Black);
+  font-size: 2rem;
+  border: 2px solid --Dark-Gray;
+}
+
+button:hover {
+  background-color: var(--Black);
+  color: var(--White);
+  border: none;
+}
+
+.gallery-mobile-btn {
+  display: none;
+}
+
+.Grid-img-div {
+  display: grid;
+  grid-template-columns: repeat(4, 200px);
+  grid-template-rows: repeat(2, 60vh);
+  place-content: center;
+  gap: 8rem;
+}
+
+.VR-img {
+  position: relative;
+  z-index: 199;
+}
+
+.VR-img + h2 {
+  position: absolute;
+  position: relative;
+  top: -10rem;
+  left: 3rem;
+  color: var(--Dark-Gray);
+  font-size: 3rem;
+  z-index: 999;
+}
+
+footer {
+  background-color: var(--Black);
+  color: var(--White);
+  height: 20rem;
+  padding: 5rem 9rem;
+}
+
+.footer-flex {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 6rem;
+}
+
+.media {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+}
+
+@media (max-width: 900px) {
+  header {
+    padding: 3rem;
+    align-items: center;
+  }
+
+  .icon-hamburger {
+    display: flex;
+  }
+
+  .header-nav ul {
+    display: none;
+  }
+
+  main {
+    overflow: visible;
+    width: 100%;
+  }
+
+  .div-h1 {
+    background-image: url(./images/desktop/image-hero.jpg);
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 100%;
+    height: 60rem;
+    top: 0rem;
+    padding: 0 2rem;
+  }
+
+  h1 {
+    margin: 20rem 0rem;
+    padding: 2rem;
+    text-transform: uppercase;
+    color: var(--White);
+    border: 2px solid white;
+    font-size: 4.5rem;
+  }
+
+  .Interactive-div {
+    margin-top: 55rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .Interactive-info {
+    position: relative;
+    margin: 2rem 1rem;
+    margin-left: 1rem;
+    padding: 3rem;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 3rem;
+    padding-bottom: 2rem;
+    line-height: 0.8;
+    text-transform: uppercase;
+    line-height: 1.2;
+  }
+
+  h2 + p {
+    line-height: 1.4;
+    color: var(--Dark-Gray);
+  }
+
+  .Grid-img-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2.7rem;
+    margin-bottom: 4rem;
+  }
+
+  h3 {
+    font-size: 3rem;
+    margin: auto;
+  }
+
+  button {
+    padding: 0 4rem;
+    background-color: var(--White);
+    color: var(--Black);
+    border: 2ps solid --White;
+  }
+
+  button:hover {
+    background-color: var(--Black);
+    color: var(--White);
+    border: none;
+  }
+
+  .gallery-header-btn {
+    display: none;
+  }
+
+  .gallery-mobile-btn {
+    display: flex;
+    text-align: center;
+    margin: 2rem auto;
+  }
+
+  .Grid-img-div {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0 2rem;
+    padding-bottom: 0rem;
+  }
+
+  .VR-img {
+    width: 100%;
+  }
+
+  .VR-img + h2 {
+    color: var(--White);
+  }
+
+  footer {
+    background-color: var(--Black);
+    color: var(--White);
+    height: 50rem;
+    /* padding: 5rem 9rem; */
+  }
+
+  .footer-flex {
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    /* padding-bottom: 6rem; */
+  }
+
+  .footer-nav ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .media {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+  }
+}

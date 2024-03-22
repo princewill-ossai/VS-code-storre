@@ -42,6 +42,21 @@ main {
   height: 50%;
 }
 
+.section1:hover {
+  background-color: black;
+  transition-duration: 1s;
+}
+
+.section2:hover {
+  background-color: black;
+  transition-duration: 1s;
+}
+
+.section3:hover {
+  background-color: black;
+  transition-duration: 1s;
+}
+
 .section2 {
   background-color: hsl(184, 100%, 22%);
   padding: 2rem 2rem;
@@ -84,7 +99,7 @@ button:hover {
   color: hsl(179, 100%, 13%);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   main {
     display: flex;
     flex-direction: column;

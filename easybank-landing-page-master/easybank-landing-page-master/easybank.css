@@ -36,6 +36,7 @@ header {
   display: flex;
   justify-content: space-between;
   padding: 2rem 5rem;
+  align-items: center;
 }
 
 nav ul {
@@ -49,6 +50,11 @@ button {
   background: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
   border-radius: 8rem;
   border: none;
+  color: var(--White);
+}
+
+.menu-icon {
+  display: none;
 }
 
 main {
@@ -109,4 +115,169 @@ h2 {
 
 .flex-icon {
   margin-bottom: 3rem;
+}
+
+.flex-div-ancestor2 {
+  background-color: var(--Very-Light-Gray);
+  padding: 10rem 5rem;
+}
+
+.flex-div2 {
+  display: flex;
+  gap: 3rem;
+}
+
+.Individual-article {
+  background-color: var(--White);
+}
+
+h3 {
+  font-size: 5rem;
+  font-weight: var(--font-weight-400);
+  padding-bottom: 5rem;
+}
+
+.Article-img {
+  width: 100%;
+  height: 25rem;
+  margin-bottom: 4rem;
+}
+
+.Article-last-descendant {
+  padding: 3rem;
+}
+
+h4 {
+  padding: 2rem 0;
+  font-size: 2rem;
+  font-weight: var(--font-weight-400);
+}
+
+.Article-last-descendant > p {
+  color: var(--Grayish-Blue);
+}
+
+.Footer {
+  display: flex;
+  background-color: var(--Dark-Blue);
+  height: 20rem;
+  justify-content: space-between;
+  padding: 6rem 16rem;
+}
+
+.Footer-img {
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+}
+
+.media-svg {
+  display: flex;
+  gap: 3rem;
+}
+
+.Footer-p {
+  color: var(--White);
+  line-height: 2;
+  font-size: 1.9rem;
+}
+
+.btn-div {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+@media (max-width:900px) {
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+    padding: 2rem 1rem;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  nav ul {
+    display: none;
+  }
+  nav + button {
+    display: none;
+  }
+
+  .menu-icon {
+    display: flex;
+    width: 5rem;
+    height: 2rem;
+  }
+  
+main {
+  position: relative;
+  width: 100%;
+}
+
+.hero {
+  position: absolute;
+  left: -5%;
+  top: -1%;
+}
+
+.sidekick {
+  position: absolute;
+  right: -6%;
+  top: -3%;
+}
+
+.h1-div {
+  margin-top: 29rem;
+  text-align: center;
+  padding: 3rem;
+}
+
+.flex-div-ancestor {
+  text-align: center;
+}
+
+.flex-div {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.flex-icon {
+  width: 35%;
+}
+
+h3 {
+  text-align: center;
+}
+
+.flex-div2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.Footer {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  height: 80rem;
+  text-align: center;
+}
+
+.Footer-img {
+  display: flex;
+  flex-direction: column;
+  padding: 4rem;
+}
+
+.Footer-p {
+  color: var(--White);
+  line-height: 2;
+  font-size: 1.9rem;
+}
+
 }

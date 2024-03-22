@@ -139,7 +139,8 @@ h3 + p {
 
 .background-img1 {
   background-image: url(./desktop/image-graphic-design.jpg);
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat; */
+  width: 100%;
 }
 
 h3 {
@@ -148,7 +149,8 @@ h3 {
 
 .background-img2 {
   background-image: url(./desktop/image-photography.jpg);
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat; */
+  width: 100%;
 }
 
 h4 {
@@ -225,7 +227,7 @@ span {
   margin: 3rem;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 900px) {
   .menu-icon {
     display: flex;
     width: 5rem;
